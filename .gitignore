@@ -1,0 +1,5 @@
+# Not published (Z 16. 10. 2026):
+# _porovnani/ = screenshot from someone else's reel, for comparison only — never publish.
+# _v1-3d/ = the old three.js version; vendor/three.min.js = unused by v2.
+_*/
+vendor/three.min.js

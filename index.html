@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KRÁTER — energie z jiného světa</title>
+<meta name="description" content="Ukázka stránky energetického nápoje s plechovkou v kráteru a přepínáním příchutí. Smyšlená značka; Vladislav Zachariev, Whyte Lynx.">
+<meta name="theme-color" content="#05060a">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KRÁTER — ukázka stránky od Whyte Lynx">
+<meta property="og:description" content="Plechovka v kráteru, tři příchutě, plynulé přepínání. Smyšlená značka, ukázka práce Whyte Lynx.">
+<meta property="og:image" content="https://vladislavzachariev-oss.github.io/krater/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://vladislavzachariev-oss.github.io/krater/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/can_grep.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stage" id="stage" aria-hidden="true"></div>
+
+<div class="ui">
+  <header class="top">
+    <a class="logo" href="#" aria-label="KRÁTER energy, úvod"><span>KRÁ</span><span>TER</span></a>
+    <p class="claim">0 cukru <b>+</b> 0 hranic</p>
+    <nav aria-label="Hlavní">
+      <a href="#prichute">Příchutě</a>
+      <a href="https://whytelynx.cz" target="_blank" rel="noopener">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="left">
+    <p class="kicker swap" id="kicker">Roztavená energie<br>na dlouhé noci</p>
+    <p class="chev" aria-hidden="true">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</p>
+    <button class="btn" id="order" type="button">Objednat</button>
+  </section>
+
+  <section class="right">
+    <p class="desc swap" id="desc">Růžový grep, krvavý pomeranč a kapka chilli. Nejdřív to zahřeje, pak to probudí.</p>
+    <p class="notes swap" id="notes">grep · pomeranč · chilli</p>
+  </section>
+
+  <ul class="flavors" id="prichute" aria-label="Příchutě">
+    <li><button type="button" data-i="0" aria-pressed="true">Žhavý grep</button></li>
+    <li><button type="button" data-i="1" aria-pressed="false">Modrá plazma</button></li>
+    <li><button type="button" data-i="2" aria-pressed="false">Temná nebula</button></li>
+  </ul>
+
+  <button class="arrow prev" type="button" aria-label="Předchozí příchuť">&#8249;</button>
+  <button class="arrow next" type="button" aria-label="Další příchuť">&#8250;</button>
+
+  <div class="count" aria-hidden="true"><span id="num">01</span> / 03<i><b id="bar"></b></i></div>
+
+  <footer>Ukázka · smyšlená značka · Vladislav Zachariev, <a href="https://whytelynx.cz" target="_blank" rel="noopener">Whyte Lynx</a></footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="vendor/motion.js"></script>
+<script src="main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5ae95e24cc924a0e84e28a82659ff3dc"}'></script>
+</body>
+</html>
